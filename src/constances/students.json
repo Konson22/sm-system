@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "gender": "Male",
+        "age": 21,
+        "faculty": "Engineering",
+        "department": "Computer Science",
+        "year": 3,
+        "enrollment_date": "2022-09-10",
+        "profile_image":"/images/avatars/Image-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "gender": "Female",
+        "age": 20,
+        "faculty": "Business",
+        "department": "Accounting",
+        "year": 2,
+        "enrollment_date": "2023-01-15",
+        "profile_image":"/images/avatars/Image-2.png"
+    },
+    {
+        "id": 3,
+        "name": "Ali Hassan",
+        "gender": "Male",
+        "age": 22,
+        "faculty": "Engineering",
+        "department": "Mechanical Engineering",
+        "year": 4,
+        "enrollment_date": "2021-08-20",
+        "profile_image":"/images/avatars/Image-3.png"
+    },
+    {
+        "id": 4,
+        "name": "Mary Johnson",
+        "gender": "Female",
+        "age": 19,
+        "faculty": "Health Sciences",
+        "department": "Nursing",
+        "year": 1,
+        "enrollment_date": "2024-01-05",
+        "profile_image":"/images/avatars/Image-4.png"
+    },
+    {
+        "id": 5,
+        "name": "Peter Kim",
+        "gender": "Male",
+        "age": 23,
+        "faculty": "Law",
+        "department": "Criminal Law",
+        "year": 4,
+        "enrollment_date": "2021-07-12",
+        "profile_image":"/images/avatars/Image-5.png"
+    },
+    {
+        "id": 6,
+        "name": "Grace Lee",
+        "gender": "Female",
+        "age": 20,
+        "faculty": "Engineering",
+        "department": "Electrical Engineering",
+        "year": 3,
+        "enrollment_date": "2022-06-10",
+        "profile_image":"/images/avatars/Image-6.png"
+    },
+    {
+        "id": 7,
+        "name": "Samuel Okoth",
+        "gender": "Male",
+        "age": 21,
+        "faculty": "Education",
+        "department": "Physics",
+        "year": 3,
+        "enrollment_date": "2022-01-02",
+        "profile_image":"/images/avatars/Image-7.png"
+    },
+    {
+        "id": 8,
+        "name": "Amara Williams",
+        "gender": "Female",
+        "age": 20,
+        "faculty": "Arts",
+        "department": "Literature",
+        "year": 2,
+        "enrollment_date": "2023-05-25",
+        "profile_image":"/images/avatars/Image-8.png"
+    },
+    {
+        "id": 9,
+        "name": "Carlos Rivera",
+        "gender": "Male",
+        "age": 22,
+        "faculty": "Engineering",
+        "department": "Civil Engineering",
+        "year": 4,
+        "enrollment_date": "2021-04-18",
+        "profile_image":"/images/avatars/Image-9.png"
+    },
+    {
+        "id": 10,
+        "name": "Fatima Ahmed",
+        "gender": "Female",
+        "age": 20,
+        "faculty": "Health Sciences",
+        "department": "Pharmacy",
+        "year": 2,
+        "enrollment_date": "2023-09-01",
+        "profile_image":"/images/avatars/Image-10.png"
+    },
+    {
+        "id": 11,
+        "name": "David Brown",
+        "gender": "Male",
+        "age": 21,
+        "faculty": "Business",
+        "department": "Marketing",
+        "year": 3,
+        "enrollment_date": "2022-01-03",
+        "profile_image":"/images/avatars/Image-11.png"
+    },
+    {
+        "id": 12,
+        "name": "Lucy Zhang",
+        "gender": "Female",
+        "age": 19,
+        "faculty": "Science",
+        "department": "Biology",
+        "year": 1,
+        "enrollment_date": "2024-08-30",
+        "profile_image":"/images/avatars/Image-12.png"
+    }
+]

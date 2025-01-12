@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @font-face {
+    font-family: TheyPerished;
+    font-weight: 300;
+    src: url("./assets/fonts/TheyPerished.ttf");
+} */
+@font-face {
+    font-family: KalamRegular;
+    font-weight: 300;
+    src: url("./assets/fonts/KalamRegular.woff");
+}
+
+@font-face {
+    font-family: 'KalamRegular';
+    src: local('./assets/fonts/KalamRegular'), url('././assets/fonts/KalamRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: MontereyFLF;
+    font-weight: 300;
+    src: url("./assets/fonts/MontereyFLF-Bold.ttf");
+}
+
+
+body {
+
+    /* font-family: 'KalamRegular'; */
+    font-size: 17px;
+}
+
+.font2 {
+    font-family: 'MontereyFLF' !important;
+}
+
+.font {
+    font-family: 'KalamRegular' !important;
+}
+
+.clip {
+    clip-path: polygon(0 0, 86% 0, 68% 100%, 0% 100%);
+    color: rgb(218, 192, 128);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    min-height: 4.5rem;
+}
+
+.container {
+    height: calc(100vh - 4.5rem);
+}
