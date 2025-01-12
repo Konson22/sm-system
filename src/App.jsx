@@ -1,14 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home";
-import Navbar from "./components/navbar";
 import Sidebar from "./components/Sidebar";
-import Attendance from "./pages/students/Attendance";
+import Attendance from "./pages/attendance";
+import NewAttendance from "./pages/attendance/NewAttendance";
 import ExaminationPage from "./pages/examination";
 import CoursesPage from "./pages/courses";
 import ReportsPage from "./pages/reports";
 import StudentsPage from "./pages/students";
 import StudentProfile from "./pages/students/Profile";
 import EditProfile from "./pages/students/Edit";
+import ViewAttendance from "./pages/attendance/ViewAttendance";
 
 function App() {
   return (
@@ -25,7 +26,11 @@ function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/reports" element={<ReportsPage />} />
           <Route path="/examination" element={<ExaminationPage />} />
-          <Route path="/attendance" element={<Attendance />} />
+          <Route path="/attendance">
+            <Route index element={<Attendance />} />
+            <Route path="new" element={<NewAttendance />} />
+            <Route path="view/:department" element={<ViewAttendance />} />
+          </Route>
         </Routes>
       </div>
     </main>

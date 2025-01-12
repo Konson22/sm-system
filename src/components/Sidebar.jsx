@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
-    <aside className="w-[20%] bg-emerald-500 text-white">
-      <div className="h-[4.5rem] flex items-center px-5 bg-emerald-600">
+    <aside className="w-[20%] bg-sky-500 text-white">
+      <div className="h-[4.5rem] flex items-center px-5 bg-sky-600">
         <span className="text-3xl">SM-System</span>
       </div>
       <ul className="">

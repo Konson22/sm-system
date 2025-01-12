@@ -1,23 +1,25 @@
 import React from "react";
-import { useContextApi } from "../../context-manager/ContextProvider";
 import Navbar from "../../components/navbar";
+import { useContextApi } from "../../context-manager/ContextProvider";
 
-export default function Attendance() {
+export default function NewAttendance() {
   const { students } = useContextApi();
+
+  const date = new Date();
+  const h = date.getHours();
+  const time = `${h}:${date.getMinutes()} ${h <= 12 ? "AM" : "PM"}`;
+
   return (
     <>
-      <Navbar title="Attendance" />
-      <div className="p-4">
-        <div className="bg-white p-6 mt-5">
+      <Navbar title="New Attendance" />
+      <div className="flex items-start p-4">
+        <div className="w-[45%] bg-white p-1 rounded-lg">
           {students.length > 0 ? (
             <table className="w-full text-left">
-              <thead className="bg-gray-200">
+              <thead className="border-y-2 bg-gray-100">
                 <tr>
-                  <td className="px-5 py-3">Name</td>
-                  <td className="px-5 py-3">Gender</td>
-                  <td className="px-5 py-3">Faculty</td>
-                  <td className="px-5 py-3">Department</td>
-                  <td className="px-5 py-3">Year</td>
+                  <td className="px-5 py-3">Student Name</td>
+                  <td className="px-5 py-3">Time in</td>
                   <td className="px-5 py-3 text-center">Actions</td>
                 </tr>
               </thead>
@@ -27,21 +29,20 @@ export default function Attendance() {
                     <td className="px-5 py-2">
                       <div className="flex items-center">
                         <img
-                          className="h-12 w-12 rounded-full mr-3"
                           src={student.profile_image}
+                          className="h-10 w-10 rounded-full"
                           alt=""
                         />
                         {student.name}
                       </div>
                     </td>
-                    <td className="px-5 py-2">{student.gender}</td>
-                    <td className="px-5 py-2">{student.faculty}</td>
-                    <td className="px-5 py-2">{student.department}</td>
-                    <td className="px-5 py-2">{student.year}</td>
+                    <td className="px-5 py-2 text-green-500">{time}</td>
                     <td className="px-5 py-2 text-right">
-                      <button className="bg-blue-600 text-base rounded text-white px-3 py-1">
-                        profile
-                      </button>
+                      <input
+                        type="checkbox"
+                        className="h-6 w-6"
+                        checked={Math.round(Math.random() > 0.5 ? true : false)}
+                      />
                     </td>
                   </tr>
                 ))}
@@ -50,6 +51,9 @@ export default function Attendance() {
           ) : (
             <div className="">No students</div>
           )}
+        </div>
+        <div className="flex-1 h-[65vh] bg-white p-6 rounded-lg shadow-lg ml-5">
+          Camera goes here....
         </div>
       </div>
     </>
